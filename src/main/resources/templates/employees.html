@@ -22,7 +22,7 @@
       <tbody></tbody>
     </table>
   </div>
-
+<!--this is the script-->
   <script src="/js/main.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -44,6 +44,7 @@
       if (!confirm('Delete?')) return;
       const res = await fetch('/api/employees/' + id, { method: 'DELETE' });
       if (res.ok) location.reload();
+	  
       else alert('Delete failed');
     }
   </script>
